@@ -1,15 +1,10 @@
 spring:
   application:
-    name: cnj-advertising-service
+    name: cnj-adservice
 ---
 spring:
   profiles: cloud
 eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
   client:
     serviceUrl:
-      defaultZone: https://hm-katz-service-registry.cfapps.io/eureka/
+      defaultZone: https://cnj-registry.cfapps.io/eureka/
