@@ -1,5 +1,5 @@
 applications:
-- name: cnj-islet-ads
+- name: cnj-islet-ads-mogmog
   path: target/cnj-adservice-0.1.0-SNAPSHOT.jar
   instances: 1
   memory: 800M

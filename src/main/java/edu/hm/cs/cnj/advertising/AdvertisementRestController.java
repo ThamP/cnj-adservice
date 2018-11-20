@@ -10,6 +10,6 @@ public class AdvertisementRestController {
 
 	@GetMapping
 	String findAd() {
-		return "Hier könnte Ihre Werbung stehen";
+		return "Kommen Sie nach Mogmog. Es ist schön hier.";
 	}
 }
