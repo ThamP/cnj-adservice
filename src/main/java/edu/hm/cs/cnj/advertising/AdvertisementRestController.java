@@ -1,6 +1,5 @@
 package edu.hm.cs.cnj.advertising;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdvertisementRestController {
 
 	@GetMapping
-	ResponseEntity<String> findAd() {
-		return ResponseEntity.ok("Hier könnte Ihre Werbung stehen");
+	String findAd() {
+		return "Hier könnte Ihre Werbung stehen";
 	}
 }
